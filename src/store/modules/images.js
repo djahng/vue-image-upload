@@ -2,7 +2,7 @@ import api from '../../api/imgur';
 import { router } from '../../main';
 
 const state = {
-  images: []
+  images: [],
 };
 
 const getters = {
@@ -24,7 +24,7 @@ const actions = {
     const response = await api.upload(images, token);
 
     router.push('/');
-  }
+  },
 };
 
 const mutations = {

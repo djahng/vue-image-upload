@@ -4,7 +4,23 @@
       <img v-for="image in allImages" :src="image.link" />
     </div>
 
-    <h2 v-else>Please log in to get started</h2>
+    <div v-else>
+      <h2>Please log in to get started</h2>
+
+      <div class="image-container">
+        <img src="//i.imgur.com/6XCftbM.jpg" />
+        <img src="//i.imgur.com/KN2EGZ3.jpg" />
+        <img src="//i.imgur.com/PLehguA.jpg" />
+        <img src="//i.imgur.com/j7NIQVi.png" />
+        <img src="//i.imgur.com/Iu5ZWcR.jpg" />
+        <img src="//i.imgur.com/9PmJ68D.jpg" />
+        <img src="//i.imgur.com/TSg3ftj.jpg" />
+        <img src="//i.imgur.com/GMY8lAx.jpg" />
+        <img src="//i.imgur.com/O00On9N.jpg" />
+        <img src="//i.imgur.com/1ScWiCU.jpg" />
+        <img src="//i.imgur.com/Ehwb9aj.jpg" />
+      </div>
+    </div>
   </div>
 </template>
 
