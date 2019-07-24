@@ -13,10 +13,12 @@ const getters = {
 
 const actions = {
   login() { api.login() },
+
   logout({ commit }) {
     commit('setToken', null);
     window.localStorage.removeItem('imgur_token');
   },
+
   finalizeLogin({ commit }, hash) {
     const query = qs.parse(hash.replace('#', ''));
 
