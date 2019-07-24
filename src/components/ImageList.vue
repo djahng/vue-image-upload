@@ -1,6 +1,10 @@
 <template>
   <div>
-    <img v-for="image in allImages" :src="image.link" />
+    <div class="image-container" v-if="isLoggedIn">
+      <img v-for="image in allImages" :src="image.link" />
+    </div>
+
+    <h2 v-else>Please log in to get started</h2>
   </div>
 </template>
 
@@ -19,7 +23,19 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allImages'])
+    ...mapGetters(['allImages', 'isLoggedIn'])
   }
 };
 </script>
+
+<style scoped>
+  .image-container {
+    column-count: 3;
+    column-gap: 0;
+  }
+
+  img {
+    max-width: 100%;
+    padding: 5px;
+  }
+</style>
