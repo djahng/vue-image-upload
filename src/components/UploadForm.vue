@@ -4,9 +4,9 @@
       type="file"
       multiple
       accept="image/*"
-      @change="uploadImages($event.target.files)"
+      @change="upload"
     />
-    <span>Drag files here!</span>
+    <span>{{ inputText }}</span>
   </div>
 </template>
 
@@ -16,8 +16,29 @@ import { mapActions } from 'vuex';
 export default {
   name: 'UploadForm',
 
+  data() {
+    return { isUploading: false };
+  },
+
   methods: {
-    ...mapActions(['uploadImages'])
+    ...mapActions(['uploadImages']),
+
+    upload(event) {
+      const { files } = event.target;
+
+      this.uploadImages(files);
+      this.isUploading = true;
+    }
+  },
+
+  computed: {
+    inputText() {
+      if (this.isUploading) {
+        return 'Uploading, please wait...';
+      } else {
+        return 'Drag files here!';
+      }
+    }
   }
 };
 </script>
