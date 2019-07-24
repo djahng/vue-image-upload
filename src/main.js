@@ -5,6 +5,7 @@ import App from './App';
 import AuthHandler from './components/AuthHandler';
 import ImageList from './components/ImageList';
 import UploadForm from './components/UploadForm';
+import ShowSomething from './components/ShowSomething';
 import store from './store';
 
 Vue.use(VueRouter);
@@ -16,6 +17,10 @@ export const router = new VueRouter({
     {
       path: '/',
       component: ImageList
+    },
+    {
+      path: '/test',
+      component: ShowSomething
     },
     {
       path: '/upload',
