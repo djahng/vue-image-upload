@@ -9,6 +9,7 @@ This is a Vue.js project that demonstrates several key concepts:
   - OAuth authentication
   - Conditionally showing components based on login status
   - Drag and drop file uploading
+  - Semantic-UI and custom CSS styling
 
 ## Project setup
 ```
