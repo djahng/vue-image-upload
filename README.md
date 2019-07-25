@@ -7,6 +7,7 @@ This is a Vue.js project that demonstrates several key concepts:
   - Vuex state management
   - External API calls with Axios (to Imugr API)
   - OAuth authentication
+  - Conditionally showing components based on login status
   - Drag and drop file uploading
 
 ## Project setup
