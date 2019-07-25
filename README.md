@@ -1,4 +1,13 @@
-# images
+# Vue Images
+
+## About
+
+This is a Vue.js project that demonstrates several key concepts:
+  - Routing with Vue Router
+  - Vuex state management
+  - External API calls with Axios (to Imugr API)
+  - OAuth authentication
+  - Drag and drop file uploading
 
 ## Project setup
 ```
